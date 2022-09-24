@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,13 +9,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform _playerVisuals;
     [SerializeField] Transform _groundChecker;
     [SerializeField] Transform _camera;
+    [SerializeField] Collider _standingCollider;
+    [SerializeField] Collider _crouchingCollider;
     [Header("Movement Settings")]
     [SerializeField] float _walkSpeed;
     [SerializeField] float _runSpeed;
     [SerializeField] float _jumpForce;
     [SerializeField] float _playerRotationSpeed;
     [Header("Ground Checking Settings")]
+    [SerializeField] LayerMask _checkMasks;
     [SerializeField] float _groundCheckRadius;
+    // [SerializeField] float _groundCheckOffset;
+    // [SerializeField] float _groundCheckDistance;
+    // [SerializeField] float _slopeForce;
     [Header("Animation Settings")]
     [SerializeField] float _animationChangeRate;
     [SerializeField] float _animationMaxWalkSpeed;
@@ -34,11 +39,15 @@ public class PlayerController : MonoBehaviour
     bool _isRunPressed;
     bool _isJumpPressed;
     bool _isGrounded;
+    bool _isInAir;
     bool _isCrouching;
 
     readonly int ANIM_VEL_Z = Animator.StringToHash("velocityZ");
+    readonly int ANIM_VEL_Y = Animator.StringToHash("velocityY");
     readonly int ANIM_IS_RUNNING = Animator.StringToHash("isRunning");
     readonly int ANIM_IS_CROUCHING = Animator.StringToHash("isCrouching");
+    readonly int ANIM_IS_GROUNDED = Animator.StringToHash("isGrounded");
+    readonly int ANIM_JUMP_PRESSED = Animator.StringToHash("jumpPressed");
 
     public bool IsMoving { get => _moveInput != Vector2.zero; }
 
@@ -67,11 +76,37 @@ public class PlayerController : MonoBehaviour
 
     void GroundCheck()
     {
-        // TODO: IMPROVE THIS SHIT
-        if (Physics.SphereCast(_groundChecker.position, _groundCheckRadius, Vector3.down, out RaycastHit hitInfo))
-            _isGrounded = false;
-        else
+        // if (Physics.SphereCast(
+        //     _groundChecker.position,
+        //     _groundCheckRadius,
+        //     Vector3.down,
+        //     out RaycastHit hitInfo))
+        // {
+        //     _isGrounded = true;
+        //     _playerAnimator.SetBool(ANIM_IS_GROUNDED, true);
+
+        //     // if (Mathf.Abs(Vector3.Angle(hitInfo.normal, Vector3.up)) < 85f)
+        //     // {
+        //     //     _rigidBody.velocity = Vector3.ProjectOnPlane(_rigidBody.velocity, hitInfo.normal);
+        //     //     _rigidBody.AddForce(Vector3.down * _slopeForce, ForceMode.Force);
+        //     // }
+        // }
+        // else
+        // {
+        //     _isGrounded = false;
+        //     _playerAnimator.SetBool(ANIM_IS_GROUNDED, false);
+        // }
+
+        if (Physics.CheckSphere(_groundChecker.position, _groundCheckRadius, _checkMasks))
+        {
             _isGrounded = true;
+            _playerAnimator.SetBool(ANIM_IS_GROUNDED, true);
+        }
+        else
+        {
+            _isGrounded = false;
+            _playerAnimator.SetBool(ANIM_IS_GROUNDED, false);
+        }
     }
 
     void Move()
@@ -98,9 +133,11 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (_isGrounded)
+        if (_isGrounded && !_isCrouching)
         {
             _rigidBody.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
+
+            _playerAnimator.SetTrigger(ANIM_JUMP_PRESSED);
         }
     }
 
@@ -133,6 +170,11 @@ public class PlayerController : MonoBehaviour
     #region ANIMATIONS
     void UpdateAnimationVelocity()
     {
+        if (!_isGrounded)
+            _playerAnimator.SetFloat(ANIM_VEL_Y, _rigidBody.velocity.y);
+        else
+            _playerAnimator.SetFloat(ANIM_VEL_Y, 0.0f);
+
         if (IsMoving)
             _animMaxVelocity = _isRunPressed ? _animationMaxRunSpeed : _animationMaxWalkSpeed;
         else
@@ -158,8 +200,6 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
-        // if (context.performed) _isJumpPressed = true;
-        // else if (context.canceled) _isJumpPressed = false;
     }
     public void OnRun(InputAction.CallbackContext context)
     {
@@ -171,61 +211,17 @@ public class PlayerController : MonoBehaviour
         if (context.performed) _isCrouching = !_isCrouching;
 
         _playerAnimator.SetBool(ANIM_IS_CROUCHING, _isCrouching);
+
+        if (_isCrouching)
+        {
+            _standingCollider.enabled = false;
+            _crouchingCollider.enabled = true;
+        }
+        else
+        {
+            _crouchingCollider.enabled = false;
+            _standingCollider.enabled = true;
+        }
     }
     #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // void ProcessMovement()
-    // {
-    //     Vector3 movementVector = new Vector3();
-    //     // Forward & Backward movement
-    //     movementVector += transform.forward * movementInput.y;
-    //     // Left & Right movement
-    //     movementVector += transform.right * movementInput.x;
-    //     // Normalize direction vector, so the speed is not higher when moving in diagonal
-    //     movementVector.Normalize();
-    //     // Modify the speed (*2) if Player is running
-    //     float speed = walkSpeed * (isCrouching ? crouchSpeedCoefficient : 1);
-    //     movementVector *= speed * (canRun ? 2 : 1) * Time.deltaTime;
-    //     // Do not modify the velocity in Y axis
-    //     movementVector.y = rigidbody.velocity.y;
-    //     // Change the velocity of the RigidBody to apply movement
-    //     rigidbody.velocity = movementVector;
-    // }
-
-    // void StickToGround()
-    // {
-    //     RaycastHit hitInfo;
-    //     CapsuleCollider collider = isCrouching ? ((CapsuleCollider)crouchingCollider) : ((CapsuleCollider)standingCollider);
-
-    //     if (Physics.SphereCast(
-    //         transform.position,
-    //         collider.radius * (1.0f - stickToGroundOffset),
-    //         Vector3.down,
-    //         out hitInfo,
-    //         ((collider.height / 2f) - collider.radius) + stickToGroundDistance,
-    //         Physics.AllLayers,
-    //         QueryTriggerInteraction.Ignore))
-    //     {
-    //         if (Mathf.Abs(Vector3.Angle(hitInfo.normal, Vector3.up)) < 85f)
-    //         {
-    //             rigidbody.velocity = Vector3.ProjectOnPlane(rigidbody.velocity, hitInfo.normal);
-    //         }
-    //     }
-    // }
 }
