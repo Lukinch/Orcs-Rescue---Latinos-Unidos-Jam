@@ -3,15 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Damager
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Trap
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
