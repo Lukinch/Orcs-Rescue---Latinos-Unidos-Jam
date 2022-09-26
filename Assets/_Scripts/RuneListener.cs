@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Rune;
 
 public abstract class RuneListener : MonoBehaviour
 {
-    [SerializeField] Rune rune;
+    [SerializeField] RuneType runeType;
 
-    void Start()
+    void Awake()
     {
-        rune.AddListener(this);
+        RuneActivator.ActivateRun += OnRuneActivated;
     }
 
-    public void OnRuneActivated()
+    public void OnRuneActivated(RuneType activated)
     {
         TriggerMechanism();
     }
