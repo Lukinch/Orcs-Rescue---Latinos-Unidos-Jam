@@ -1,15 +1,17 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Rune : MonoBehaviour
 {
     [SerializeField] RuneType runeType;
     [SerializeField] Material activatedMaterial;
-    public static event Action<RuneType> OnRuneActivated;
+    List<RuneListener> listeners;
 
     void Awake()
     {
         RuneActivator.ActivateRun += ActivateRune;
+        listeners = new List<RuneListener>();
     }
 
     void ActivateRune(RuneType activated)
@@ -18,13 +20,27 @@ public class Rune : MonoBehaviour
         {
             Debug.Log("Activated!");
             GetComponent<Renderer>().material = activatedMaterial;
-            OnRuneActivated?.Invoke(runeType);
+            NotifyListeners();
+        }
+    }
+
+    public void AddListener(RuneListener listener)
+    {
+        listeners.Add(listener);
+    }
+
+    void NotifyListeners()
+    {
+        foreach(RuneListener listener in listeners)
+        {
+            listener.OnRuneActivated();
         }
     }
 
     void OnDestroy()
     {
         RuneActivator.ActivateRun -= ActivateRune;
+        listeners.Clear();
     }
 
     public enum RuneType
