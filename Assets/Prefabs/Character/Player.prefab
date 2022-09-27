@@ -1238,7 +1238,7 @@ MonoBehaviour:
   _playerRotationSpeed: 7
   _checkMasks:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 63
   _groundCheckRadius: 0.45
   _groundCheckDistance: 0.1
   _slopeForce: 2
