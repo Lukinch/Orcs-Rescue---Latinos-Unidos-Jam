@@ -9,8 +9,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform _playerVisuals;
     [SerializeField] Transform _groundChecker;
     [SerializeField] Transform _camera;
-    [SerializeField] CapsuleCollider _standingCollider;
+    [SerializeField] CapsuleCollider _standingCollider; 
+    [SerializeField] CapsuleCollider _frictionlessStandingCollider;
     [SerializeField] CapsuleCollider _crouchingCollider;
+    [SerializeField] CapsuleCollider _frictionlessCrouchingCollider;
     CapsuleCollider _currentCollider;
     [Header("Movement Settings")]
     [SerializeField] float _walkSpeed;
@@ -229,13 +231,19 @@ public class PlayerController : MonoBehaviour
         if (_isCrouching)
         {
             _standingCollider.enabled = false;
+            _frictionlessStandingCollider.enabled = false;
             _crouchingCollider.enabled = true;
+            _frictionlessCrouchingCollider.enabled = true;
+
             _currentCollider = _crouchingCollider;
         }
         else
         {
             _crouchingCollider.enabled = false;
+            _frictionlessCrouchingCollider.enabled = false;
             _standingCollider.enabled = true;
+            _frictionlessStandingCollider.enabled = true;
+            
             _currentCollider = _standingCollider;
         }
     }

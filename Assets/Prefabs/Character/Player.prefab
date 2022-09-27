@@ -1003,6 +1003,8 @@ GameObject:
   - component: {fileID: 1822918800}
   - component: {fileID: 3806672440597843479}
   - component: {fileID: 1822918804}
+  - component: {fileID: 354192202}
+  - component: {fileID: 354192203}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1038,7 +1040,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3
+  m_Radius: 0.2
   m_Height: 1.9
   m_Direction: 1
   m_Center: {x: 0, y: 0.95, z: 0}
@@ -1227,7 +1229,9 @@ MonoBehaviour:
   _groundChecker: {fileID: 3806672441894370533}
   _camera: {fileID: 2187593177130359541}
   _standingCollider: {fileID: 3806672440597843486}
+  _frictionlessStandingCollider: {fileID: 354192203}
   _crouchingCollider: {fileID: 1822918804}
+  _frictionlessCrouchingCollider: {fileID: 354192202}
   _walkSpeed: 2
   _runSpeed: 6
   _jumpForce: 5
@@ -1251,10 +1255,38 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 0
-  m_Radius: 0.4
+  m_Radius: 0.3
   m_Height: 1.4
   m_Direction: 1
   m_Center: {x: 0, y: 0.7, z: 0}
+--- !u!136 &354192202
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806672440597843483}
+  m_Material: {fileID: 13400000, guid: d048fea8a7d4a9c488ee8c101d5ec7f1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.4
+  m_Height: 1.3
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.75, z: 0}
+--- !u!136 &354192203
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806672440597843483}
+  m_Material: {fileID: 13400000, guid: d048fea8a7d4a9c488ee8c101d5ec7f1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3806672441535412051
 GameObject:
   m_ObjectHideFlags: 0
