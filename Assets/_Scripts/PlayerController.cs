@@ -9,8 +9,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform _playerVisuals;
     [SerializeField] Transform _groundChecker;
     [SerializeField] Transform _camera;
-    [SerializeField] Collider _standingCollider;
-    [SerializeField] Collider _crouchingCollider;
+    [SerializeField] CapsuleCollider _standingCollider; 
+    [SerializeField] CapsuleCollider _frictionlessStandingCollider;
+    [SerializeField] CapsuleCollider _crouchingCollider;
+    [SerializeField] CapsuleCollider _frictionlessCrouchingCollider;
+    CapsuleCollider _currentCollider;
     [Header("Movement Settings")]
     [SerializeField] float _walkSpeed;
     [SerializeField] float _runSpeed;
@@ -19,9 +22,8 @@ public class PlayerController : MonoBehaviour
     [Header("Ground Checking Settings")]
     [SerializeField] LayerMask _checkMasks;
     [SerializeField] float _groundCheckRadius;
-    // [SerializeField] float _groundCheckOffset;
-    // [SerializeField] float _groundCheckDistance;
-    // [SerializeField] float _slopeForce;
+    [SerializeField] float _groundCheckDistance;
+    [SerializeField] float _slopeForce;
     [Header("Animation Settings")]
     [SerializeField] float _animationChangeRate;
     [SerializeField] float _animationMaxWalkSpeed;
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
+        _currentCollider = _standingCollider;
     }
 
     void Start()
@@ -76,27 +79,40 @@ public class PlayerController : MonoBehaviour
 
     void GroundCheck()
     {
-        // if (Physics.SphereCast(
-        //     _groundChecker.position,
-        //     _groundCheckRadius,
-        //     Vector3.down,
-        //     out RaycastHit hitInfo))
-        // {
-        //     _isGrounded = true;
-        //     _playerAnimator.SetBool(ANIM_IS_GROUNDED, true);
+        GroundCheckBySphereCast();
+    }
 
-        //     // if (Mathf.Abs(Vector3.Angle(hitInfo.normal, Vector3.up)) < 85f)
-        //     // {
-        //     //     _rigidBody.velocity = Vector3.ProjectOnPlane(_rigidBody.velocity, hitInfo.normal);
-        //     //     _rigidBody.AddForce(Vector3.down * _slopeForce, ForceMode.Force);
-        //     // }
-        // }
-        // else
-        // {
-        //     _isGrounded = false;
-        //     _playerAnimator.SetBool(ANIM_IS_GROUNDED, false);
-        // }
+    void GroundCheckBySphereCast()
+    {
+        if (Physics.SphereCast(
+            transform.position + Vector3.up * (_currentCollider.radius + Physics.defaultContactOffset),
+            _currentCollider.radius - Physics.defaultContactOffset,
+            Vector3.down,
+            out RaycastHit hitInfo,
+            _groundCheckDistance,
+            _checkMasks,
+            QueryTriggerInteraction.Ignore))
+        {
+            Debug.Log("Grounded");
+            _isGrounded = true;
+            _playerAnimator.SetBool(ANIM_IS_GROUNDED, true);
 
+            if (Mathf.Abs(Vector3.Angle(hitInfo.normal, Vector3.up)) < 85f)
+            {
+                _rigidBody.velocity = Vector3.ProjectOnPlane(_rigidBody.velocity, hitInfo.normal);
+                _rigidBody.AddForce(Vector3.down * _slopeForce, ForceMode.Force);
+            }
+        }
+        else
+        {
+            Debug.Log("Air");
+            _isGrounded = false;
+            _playerAnimator.SetBool(ANIM_IS_GROUNDED, false);
+        }
+    }
+
+    void GroundCheckByCheckSphere()
+    {
         if (Physics.CheckSphere(_groundChecker.position, _groundCheckRadius, _checkMasks))
         {
             _isGrounded = true;
@@ -215,12 +231,20 @@ public class PlayerController : MonoBehaviour
         if (_isCrouching)
         {
             _standingCollider.enabled = false;
+            _frictionlessStandingCollider.enabled = false;
             _crouchingCollider.enabled = true;
+            _frictionlessCrouchingCollider.enabled = true;
+
+            _currentCollider = _crouchingCollider;
         }
         else
         {
             _crouchingCollider.enabled = false;
+            _frictionlessCrouchingCollider.enabled = false;
             _standingCollider.enabled = true;
+            _frictionlessStandingCollider.enabled = true;
+            
+            _currentCollider = _standingCollider;
         }
     }
     #endregion
