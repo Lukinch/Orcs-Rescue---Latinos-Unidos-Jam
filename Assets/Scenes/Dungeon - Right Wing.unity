@@ -25685,9 +25685,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1184169023 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
+  m_CorrespondingSourceObject: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
     type: 3}
-  m_PrefabInstance: {fileID: 1213583928}
+  m_PrefabInstance: {fileID: 5965746309512947037}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1184226761
 PrefabInstance:
@@ -26518,105 +26518,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a5c2b51e6ab424fb46547daf81a610, type: 3}
---- !u!1001 &1213583928
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 685520165}
-    m_Modifications:
-    - target: {fileID: 484000888693634839, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: amplitude
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4032793123912090250, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 5097733366989537804, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_Name
-      value: Saw with Rail Trap
-      objectReference: {fileID: 0}
-    - target: {fileID: 5511549995439212512, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5511549995439212512, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5511549995439212512, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5511549995439212512, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 26.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.111
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -19.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8492097381568826236, guid: 4dac97337f42c8b4981f89ba3872d6e0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4dac97337f42c8b4981f89ba3872d6e0, type: 3}
 --- !u!1001 &1220307560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48433,6 +48334,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8377771211439012618}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5965746309512947037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 685520165}
+    m_Modifications:
+    - target: {fileID: 1473908343635015017, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Saw with Rail Trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.111
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2815712088967052313, guid: 4473f9496406ddf4891e744cebff36f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4473f9496406ddf4891e744cebff36f0, type: 3}
 --- !u!4 &6553495502560540552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1666814482213401107, guid: 7052cb5cec6a37e4297b8943cae4b202,

@@ -11,12 +11,6 @@ public class RuneActivator : MonoBehaviour
     [SerializeField] Material activatedMaterial;
     bool alreadyActivated;
     public static event Action<RuneType> ActivateRun;
-    Vector3 initial;
-
-    private void Awake()
-    {
-        initial = transform.localPosition;
-    }
 
     void OnTriggerEnter(Collider other)
     {

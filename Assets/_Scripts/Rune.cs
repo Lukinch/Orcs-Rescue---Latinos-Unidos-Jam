@@ -32,6 +32,7 @@ public class Rune : MonoBehaviour
         RIGHT_WING_RUNE,
         FRONT_WING_LEFT_RUNE,
         FRONT_WING_FRONT_RUNE,
-        FRONT_WING_RIGHT_RUNE
+        FRONT_WING_RIGHT_RUNE,
+        FRONT_WING_RIGHT_INTERMEDIATE_RUNE
     }
 }
