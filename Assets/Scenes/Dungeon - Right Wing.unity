@@ -2058,6 +2058,10 @@ PrefabInstance:
       value: SM_Env_DoorDouble_Round_01 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 151566, guid: 7b2cf94cdab0ced489fd2a15c809d7b3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 151566, guid: 7b2cf94cdab0ced489fd2a15c809d7b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -2097,8 +2101,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -180
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 65751508817235718, guid: 7b2cf94cdab0ced489fd2a15c809d7b3, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b2cf94cdab0ced489fd2a15c809d7b3, type: 3}
 --- !u!4 &106877624 stripped
 Transform:
@@ -8643,6 +8646,10 @@ PrefabInstance:
       value: SM_Env_DoorDouble_Round_02 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 158966, guid: 7ddf8511e259b61448ee08c0759223e2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 158966, guid: 7ddf8511e259b61448ee08c0759223e2, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -8682,8 +8689,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -180
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 65496325254990218, guid: 7ddf8511e259b61448ee08c0759223e2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ddf8511e259b61448ee08c0759223e2, type: 3}
 --- !u!4 &431810314 stripped
 Transform:
@@ -15857,6 +15863,10 @@ PrefabInstance:
       value: SM_Env_DoorDouble_Round_01 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 151566, guid: 7b2cf94cdab0ced489fd2a15c809d7b3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 151566, guid: 7b2cf94cdab0ced489fd2a15c809d7b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -15896,8 +15906,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -180
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 65751508817235718, guid: 7b2cf94cdab0ced489fd2a15c809d7b3, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b2cf94cdab0ced489fd2a15c809d7b3, type: 3}
 --- !u!4 &730990884 stripped
 Transform:
@@ -35032,6 +35041,10 @@ PrefabInstance:
       value: SM_Env_DoorDouble_Round_02 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 158966, guid: 7ddf8511e259b61448ee08c0759223e2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 158966, guid: 7ddf8511e259b61448ee08c0759223e2, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -35071,8 +35084,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -180
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 65496325254990218, guid: 7ddf8511e259b61448ee08c0759223e2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ddf8511e259b61448ee08c0759223e2, type: 3}
 --- !u!4 &1650247674 stripped
 Transform:
@@ -47772,6 +47784,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Secret Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509279397126049824, guid: 35aa7847d8ce9b64d91559310a379cb6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1509279397126049825, guid: 35aa7847d8ce9b64d91559310a379cb6,
         type: 3}
