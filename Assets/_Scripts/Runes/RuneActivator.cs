@@ -9,6 +9,7 @@ public class RuneActivator : MonoBehaviour
     [SerializeField] RuneType runeType;
     [SerializeField] float animationOffset;
     [SerializeField] float animationSpeed;
+    float maxWaitTime = 0.8f;
     [SerializeField] Material activatedMaterial;
     bool alreadyActivated;
     public static event Action<RuneType> ActivateRun;
@@ -24,13 +25,17 @@ public class RuneActivator : MonoBehaviour
 
     IEnumerator ActivateRuneCoroutine()
     {
+        float counter = 0;
         Vector3 activatedPosition = new Vector3(transform.position.x, transform.position.y + animationOffset, transform.position.z);
+        Debug.Log("Activating!");
         while (transform.position != activatedPosition)
         {
             transform.position = Vector3.MoveTowards(transform.position, activatedPosition, animationSpeed * Time.deltaTime);
+            counter += Time.deltaTime;
             yield return new WaitForEndOfFrame();
+            if (counter > maxWaitTime) break;
         }
-
+        Debug.Log("Activated!");
         GetComponent<Renderer>().material = activatedMaterial;
         ActivateRun?.Invoke(runeType);
     }
