@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094705668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.51, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -218,7 +218,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 189660, guid: 6661779a48232e74087f4da6857846f8, type: 3}
       propertyPath: m_Name
-      value: Pit Trap
+      value: Pit Trap Variant
       objectReference: {fileID: 0}
     - target: {fileID: 455900, guid: 6661779a48232e74087f4da6857846f8, type: 3}
       propertyPath: m_RootOrder
@@ -226,15 +226,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455900, guid: 6661779a48232e74087f4da6857846f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -97.39
+      value: 67.16
       objectReference: {fileID: 0}
     - target: {fileID: 455900, guid: 6661779a48232e74087f4da6857846f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.31
+      value: -24.99469
       objectReference: {fileID: 0}
     - target: {fileID: 455900, guid: 6661779a48232e74087f4da6857846f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.26
+      value: -67.2
       objectReference: {fileID: 0}
     - target: {fileID: 455900, guid: 6661779a48232e74087f4da6857846f8, type: 3}
       propertyPath: m_LocalRotation.w

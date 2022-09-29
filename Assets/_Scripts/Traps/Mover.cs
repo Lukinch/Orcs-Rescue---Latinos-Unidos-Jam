@@ -8,6 +8,7 @@ public class Mover : MonoBehaviour
     [SerializeField] float moveToTargetVelocity;
     [SerializeField] float backToInitVelocity;
     [SerializeField] float waitTime;
+    [SerializeField] float startDelay;
     [SerializeField] Vector3 movementDelta;
 
     new Rigidbody rigidbody;
@@ -15,32 +16,49 @@ public class Mover : MonoBehaviour
     Vector3 targetPosition;
     bool isFromInitialPosition;
     bool shouldWait;
+    bool isTrapActive;
 
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
         initialPosition = rigidbody.position;
         SetLocalMovementVector();
+
+        if (startDelay > 0)
+        {
+            Invoke(nameof(ActivateTrap), startDelay);
+        } else
+        {
+            ActivateTrap();
+        }
+    }
+
+    void ActivateTrap()
+    {
+        isTrapActive = true;
     }
 
     void FixedUpdate()
     {
-        if (!shouldWait)
+        if (isTrapActive)
         {
-            if (isFromInitialPosition)
+            if (!shouldWait)
             {
-                rigidbody.MovePosition(Vector3.MoveTowards(rigidbody.position, targetPosition, moveToTargetVelocity * Time.fixedDeltaTime));
-                if (rigidbody.position == targetPosition)
+                if (isFromInitialPosition)
                 {
-                    ChangeMovement();
+                    rigidbody.MovePosition(Vector3.MoveTowards(rigidbody.position, targetPosition, moveToTargetVelocity * Time.fixedDeltaTime));
+                    if (rigidbody.position == targetPosition)
+                    {
+                        ChangeMovement();
+                    }
                 }
-            }
-            else
-            {
-                rigidbody.MovePosition(Vector3.MoveTowards(rigidbody.position, initialPosition, backToInitVelocity * Time.fixedDeltaTime));
-                if (rigidbody.position == initialPosition)
+                else
                 {
-                    ChangeMovement();
+                    rigidbody.MovePosition(Vector3.MoveTowards(rigidbody.position, initialPosition, backToInitVelocity * Time.fixedDeltaTime));
+                    if (rigidbody.position == initialPosition)
+                    {
+                        ChangeMovement();
+                    }
                 }
             }
         }
