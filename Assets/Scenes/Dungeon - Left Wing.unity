@@ -327,6 +327,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1816,6 +1824,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -2390,6 +2406,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -3206,6 +3230,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3280,6 +3312,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -3987,6 +4027,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -4211,6 +4259,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -4514,6 +4570,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -5453,6 +5517,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -5591,6 +5663,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -5728,6 +5808,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -6391,6 +6479,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -6964,6 +7060,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -8641,6 +8745,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -9981,6 +10093,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -10342,6 +10462,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -10845,6 +10973,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -11045,6 +11181,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -11423,6 +11567,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -12526,6 +12678,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -14763,6 +14923,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -15237,6 +15405,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -15964,6 +16140,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -16652,6 +16836,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -20483,6 +20675,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -21207,6 +21407,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -21281,6 +21489,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -22828,6 +23044,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -24016,6 +24240,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -25981,6 +26213,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -26296,6 +26536,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -26415,6 +26663,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -27222,6 +27478,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -27434,6 +27698,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -29137,6 +29409,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -30943,6 +31223,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -31017,6 +31305,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -31167,6 +31463,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -31460,6 +31764,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -31677,6 +31989,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -31889,6 +32209,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -32481,6 +32809,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -32555,6 +32891,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -33049,6 +33393,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -33123,6 +33475,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -33673,6 +34033,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -33838,6 +34206,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -33912,6 +34288,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -34305,6 +34689,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -35315,6 +35707,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -35687,6 +36087,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -37089,6 +37497,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -37163,6 +37579,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -38365,6 +38789,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -38863,6 +39295,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
@@ -40119,6 +40559,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -41163,6 +41611,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -42004,6 +42460,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -42513,6 +42977,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
+      objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -42587,6 +43059,14 @@ PrefabInstance:
     - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_Name
       value: SM_Trap_Spears_01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 141092, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
+      propertyPath: m_TagString
+      value: Damager
       objectReference: {fileID: 0}
     - target: {fileID: 445952, guid: bb5451e0ed4ccd14f946993edded0944, type: 3}
       propertyPath: m_RootOrder
