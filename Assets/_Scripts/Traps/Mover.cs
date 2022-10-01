@@ -5,18 +5,18 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Mover : MonoBehaviour
 {
-    [SerializeField] float moveToTargetVelocity;
-    [SerializeField] float backToInitVelocity;
-    [SerializeField] float waitTime;
-    [SerializeField] float startDelay;
-    [SerializeField] Vector3 movementDelta;
+    [SerializeField] protected float moveToTargetVelocity;
+    [SerializeField] protected float backToInitVelocity;
+    [SerializeField] protected float waitTime;
+    [SerializeField] protected float startDelay;
+    [SerializeField] protected Vector3 movementDelta;
 
-    new Rigidbody rigidbody;
-    Vector3 initialPosition;
-    Vector3 targetPosition;
-    bool isFromInitialPosition;
-    bool shouldWait;
-    bool isTrapActive;
+    protected new Rigidbody rigidbody;
+    protected Vector3 initialPosition;
+    protected Vector3 targetPosition;
+    protected bool isFromInitialPosition;
+    protected bool shouldWait;
+    protected bool isTrapActive;
 
     void Awake()
     {
@@ -27,7 +27,8 @@ public class Mover : MonoBehaviour
         if (startDelay > 0)
         {
             Invoke(nameof(ActivateTrap), startDelay);
-        } else
+        }
+        else
         {
             ActivateTrap();
         }
@@ -38,7 +39,7 @@ public class Mover : MonoBehaviour
         isTrapActive = true;
     }
 
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         if (isTrapActive)
         {
@@ -64,19 +65,19 @@ public class Mover : MonoBehaviour
         }
     }
 
-    void ChangeMovement()
+    protected void ChangeMovement()
     {
         isFromInitialPosition = !isFromInitialPosition;
         shouldWait = true;
         Invoke("StartMovement", waitTime);
     }
 
-    void StartMovement()
+    protected virtual void StartMovement()
     {
         shouldWait = false;
     }
 
-    void SetLocalMovementVector()
+    protected void SetLocalMovementVector()
     {
         targetPosition = rigidbody.position + movementDelta;
     }

@@ -6,6 +6,8 @@ public class FlameHeadTrap : MonoBehaviour
 {
     [SerializeField] float waitingTime;
     [SerializeField] float flameDuration;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip flameClip;
     ParticleSystem flamesParticleSystem;
 
     void Awake()
@@ -20,12 +22,14 @@ public class FlameHeadTrap : MonoBehaviour
 
     void LaunchFlame()
     {
+        audioSource.Play();
         flamesParticleSystem.Play();
         Invoke(nameof(StopAndRelaunchFlame), flameDuration);
     }
 
     void StopAndRelaunchFlame()
     {
+        audioSource.Stop();
         flamesParticleSystem.Stop();
         Invoke(nameof(LaunchFlame), waitingTime);
     }
