@@ -51,4 +51,16 @@ public class PlayerManager : MonoBehaviour
         _playerReferences.DisableControllerScript();
         playerInput.SwitchCurrentActionMap("UI");
     }
+
+    public void EnablePlayerInteractionAndCamera()
+    {
+        _playerReferences.EnableCameras();
+        _playerReferences.EnableControllerScript();
+    }
+
+    public void DisablePlayerInteractionAndCamera()
+    {
+        _playerReferences.DisableCameras();
+        _playerReferences.DisableControllerScript();
+    }
 }
