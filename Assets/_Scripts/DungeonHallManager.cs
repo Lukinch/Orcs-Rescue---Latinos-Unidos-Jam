@@ -14,10 +14,8 @@ public class DungeonHallManager : MonoBehaviour
 
     void Awake()
     {
-        if (GameObject.FindGameObjectWithTag(Tags.PLAYER) == null)
-        {
-            GameStateController.Instance.InstantiatePlayer(playerInitialSpawnPoint);
-        }
+        PlayerManager.Instance.PlayerInput.gameObject.transform.SetPositionAndRotation(
+            playerInitialSpawnPoint.position, playerInitialSpawnPoint.rotation);
 
         CheckState();
     }

@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform _playerVisuals;
     [SerializeField] Transform _groundChecker;
     [SerializeField] Transform _camera;
-    [SerializeField] CapsuleCollider _standingCollider; 
+    [SerializeField] CapsuleCollider _standingCollider;
     [SerializeField] CapsuleCollider _frictionlessStandingCollider;
     [SerializeField] CapsuleCollider _crouchingCollider;
     [SerializeField] CapsuleCollider _frictionlessCrouchingCollider;
@@ -59,12 +59,6 @@ public class PlayerController : MonoBehaviour
         _currentCollider = _standingCollider;
     }
 
-    void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
     void Update()
     {
         UpdateAnimationVelocity();
@@ -93,7 +87,6 @@ public class PlayerController : MonoBehaviour
             _checkMasks,
             QueryTriggerInteraction.Ignore))
         {
-            Debug.Log("Grounded");
             _isGrounded = true;
             _playerAnimator.SetBool(ANIM_IS_GROUNDED, true);
 
@@ -105,7 +98,6 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Air");
             _isGrounded = false;
             _playerAnimator.SetBool(ANIM_IS_GROUNDED, false);
         }
@@ -243,7 +235,7 @@ public class PlayerController : MonoBehaviour
             _frictionlessCrouchingCollider.enabled = false;
             _standingCollider.enabled = true;
             _frictionlessStandingCollider.enabled = true;
-            
+
             _currentCollider = _standingCollider;
         }
     }

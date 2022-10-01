@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ddff59b72a30dc844a34ccb0f05aa082
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Om Botak
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 440418a5cf578af4db300ce36f64a63a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
