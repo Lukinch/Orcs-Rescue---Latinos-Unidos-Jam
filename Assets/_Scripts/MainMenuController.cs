@@ -11,6 +11,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] GameObject _pressAnyButton;
     [SerializeField] GameObject _buttonContainer;
     [SerializeField] GameObject _settingsObject;
+    [SerializeField] AudioClip _newGameSound;
 
     void Awake() => _playerInputManager.onPlayerJoined += OnPlayerCreated;
 
@@ -26,6 +27,10 @@ public class MainMenuController : MonoBehaviour
     public void StartNewGame()
     {
         GameStateController.Instance.CurrentGameState = GameStateController.GameState.ENTERING_GAME;
+        AudioManager.Instance.Stop();
+        //AudioManager.Instance.AudioSource.PlayOneShot(_newGameSound);
+
+        // TODO: Fade screen to black while track is playing, and then load new level
         SceneManager.LoadScene(Scenes.LOADING_SCREEN);
         PlayerManager.Instance.PlayerReferences.EnableVisuals();
         PlayerManager.Instance.PlayerReferences.EnableCameras();
@@ -35,6 +40,8 @@ public class MainMenuController : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        AudioManager.Instance.StartPlayingBGM();
     }
 
     public void ExitGame()
