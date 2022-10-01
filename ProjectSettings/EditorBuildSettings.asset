@@ -6,6 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: 93208a444ea878e4e81c6cbd0c1f8d36
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: e2f0b720de2f20c40b3ec0c0f26d900e
+  - enabled: 1
+    path: Assets/Scenes/Opening Cinematic.unity
+    guid: fdc025217be291e4d9a96415614eb68f
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: 0630fa402a632e543974e4139b364263
+  - enabled: 1
+    path: Assets/Scenes/Left Wing Connector.unity
+    guid: 7b9be0543e4c6744a8a0bf1de0f72118
+  - enabled: 1
+    path: Assets/Scenes/Dungeon - Left Wing.unity
+    guid: 3fc58feff711c624db6ce4a423555e5d
+  - enabled: 1
+    path: Assets/Scenes/Right Wing Connector.unity
+    guid: 1cfb8c336a8a3fc4ca7ac2f48c7b16e0
+  - enabled: 1
+    path: Assets/Scenes/Dungeon - Right Wing.unity
+    guid: 21d60734f830d504c866d193db214371
+  - enabled: 1
+    path: Assets/Scenes/Front Wing Connector.unity
+    guid: 4c7ffbbd1bd20004f995772523a20d10
+  - enabled: 1
+    path: Assets/Scenes/Dungeon - Front Wing.unity
+    guid: c063cc7edec70b046b60a805a3056618
+  - enabled: 1
+    path: Assets/Scenes/Ending Cinematic.unity
+    guid: b5b6926848e693545b889c91c1d7ed1c
   m_configObjects: {}
