@@ -10280,6 +10280,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: movementDelta.z
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 6007778011011246239, guid: 67269eb32a37ef246ba5209ae63a2ec4,
         type: 3}
       propertyPath: movementDelta.z

@@ -5,6 +5,10 @@ public class PitTrap : MonoBehaviour
 {
     [SerializeField] float timeToOpen;
     [SerializeField] float shakeTime;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip shakeClip;
+    [SerializeField] AudioClip openClip;
+
     PitTrapDoor[] trapDoors;
     bool trapOpened;
 
@@ -18,6 +22,7 @@ public class PitTrap : MonoBehaviour
         trapOpened = true;
         foreach (PitTrapDoor trapDoor in trapDoors)
         {
+            audioSource.PlayOneShot(openClip);
             trapDoor.Open();
         }
     }
@@ -28,6 +33,7 @@ public class PitTrap : MonoBehaviour
         {
             foreach (PitTrapDoor trapDoor in trapDoors)
             {
+                audioSource.PlayOneShot(shakeClip);
                 trapDoor.Shake(shakeTime);
             }
 

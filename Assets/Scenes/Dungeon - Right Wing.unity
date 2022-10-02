@@ -4884,6 +4884,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: movementDelta.y
+      value: -3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: movementDelta.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6007778011011246239, guid: 67269eb32a37ef246ba5209ae63a2ec4,
         type: 3}
       propertyPath: movementDelta.y
@@ -16539,6 +16547,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: movementDelta.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: movementDelta.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6007778011011246239, guid: 67269eb32a37ef246ba5209ae63a2ec4,
         type: 3}
       propertyPath: waitTime
@@ -16989,6 +17005,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 685520165}
     m_Modifications:
     - target: {fileID: 167369610, guid: e336144183029014ab31521249b8767f, type: 3}
+      propertyPath: waitTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455365307790707184, guid: e336144183029014ab31521249b8767f,
+        type: 3}
       propertyPath: waitTime
       value: 2
       objectReference: {fileID: 0}
@@ -19632,6 +19653,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 493656, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: waitTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: movementDelta.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: movementDelta.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6007778011011246239, guid: 67269eb32a37ef246ba5209ae63a2ec4,
@@ -38729,6 +38762,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2135778425, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
+      propertyPath: movementDelta.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6007778011011246239, guid: 67269eb32a37ef246ba5209ae63a2ec4,
         type: 3}
       propertyPath: movementDelta.z
@@ -45506,6 +45543,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 685520165}
     m_Modifications:
     - target: {fileID: 167369610, guid: e336144183029014ab31521249b8767f, type: 3}
+      propertyPath: waitTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455365307790707184, guid: e336144183029014ab31521249b8767f,
+        type: 3}
       propertyPath: waitTime
       value: 2
       objectReference: {fileID: 0}
