@@ -21,9 +21,7 @@ public class DungeonHallManager : MonoBehaviour
         switch (GameStateController.Instance.CurrentGameState)
         {
             case GameStateController.GameState.ENTERING_GAME:
-                PlayerManager.Instance.PlayerInput.gameObject.transform.SetPositionAndRotation(
-                    playerInitialSpawnPoint.position, playerInitialSpawnPoint.rotation);
-                EnableLeftWing();
+                OnGameInit();
                 break;
             case GameStateController.GameState.LEFT_WING_NOT_COMPLETED:
                 StartCoroutine(OpenGate(leftWingGate));
@@ -46,6 +44,19 @@ public class DungeonHallManager : MonoBehaviour
         }
     }
 
+    void OnGameInit()
+    {
+        AudioManager.Instance.StartPlayingBGM();
+        PlayerManager.Instance.PlayerInput.gameObject.transform.SetPositionAndRotation(
+                    playerInitialSpawnPoint.position, playerInitialSpawnPoint.rotation);
+        PlayerManager.Instance.PlayerReferences.EnableVisuals();
+        PlayerManager.Instance.PlayerReferences.EnableCameras();
+        PlayerManager.Instance.PlayerReferences.EnableControllerScript();
+        PlayerManager.Instance.PlayerReferences.MakePlayerDynamic();
+        PlayerManager.Instance.PlayerInput.SwitchCurrentActionMap("Player");
+
+        EnableLeftWing();
+    }
     public void OnLeftWingLeft()
     {
         StartCoroutine(CloseGate(leftWingGate));

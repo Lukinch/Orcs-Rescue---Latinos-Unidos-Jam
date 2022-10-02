@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -32,16 +29,9 @@ public class MainMenuController : MonoBehaviour
 
         // TODO: Fade screen to black while track is playing, and then load new level
         SceneManager.LoadScene(Scenes.LOADING_SCREEN);
-        PlayerManager.Instance.PlayerReferences.EnableVisuals();
-        PlayerManager.Instance.PlayerReferences.EnableCameras();
-        PlayerManager.Instance.PlayerReferences.EnableControllerScript();
-        PlayerManager.Instance.PlayerReferences.MakePlayerDynamic();
-        PlayerManager.Instance.PlayerInput.SwitchCurrentActionMap("Player");
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        AudioManager.Instance.StartPlayingBGM();
     }
 
     public void ExitGame()
