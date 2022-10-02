@@ -22,14 +22,24 @@ public class FrontWingManager : WingManager
         if (lastActivatedRune == RuneType.FRONT_WING_LEFT_RUNE)
         {
             firstRuneActivated = true;
+            GameStateController.Instance.CurrentGameState = GameStateController.GameState.FRONT_WING_CHALLENGE_1_COMPLETED;
         } else if (lastActivatedRune == RuneType.FRONT_WING_FRONT_RUNE)
         {
             secondRuneActivated = true;
+            GameStateController.Instance.CurrentGameState = GameStateController.GameState.FRONT_WING_CHALLENGE_2_COMPLETED;
         } else if (lastActivatedRune == RuneType.FRONT_WING_RIGHT_RUNE)
         {
             thirdRuneActivated = true;
+            GameStateController.Instance.CurrentGameState = GameStateController.GameState.FRONT_WING_CHALLENGE_3_COMPLETED;
         }
 
-        return firstRuneActivated && secondRuneActivated && thirdRuneActivated;
+        if (firstRuneActivated && secondRuneActivated && thirdRuneActivated)
+        {
+            GameStateController.Instance.CurrentGameState = GameStateController.GameState.FRONT_WING_COMPLETED;
+            return true;
+        } else
+        {
+            return false;
+        }
     }
 }

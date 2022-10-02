@@ -2,6 +2,7 @@ public static class Tags
 {
     public const string PLAYER = "Player";
     public const string DAMAGER = "Damager";
+    public const string RESPAWN_POINT = "Respawn";
 }
 
 public static class Scenes

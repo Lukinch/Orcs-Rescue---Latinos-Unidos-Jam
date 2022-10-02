@@ -100,6 +100,9 @@ public class PlayerManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
+        Transform respawnPoint = GameObject.FindGameObjectWithTag(Tags.RESPAWN_POINT).transform;
+        PlayerInput.gameObject.transform.SetPositionAndRotation(
+                    respawnPoint.position, respawnPoint.rotation);
         isPlayerDead = false;
         EnablePlayerInteraction();
         PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_DEAD_TRIGGERED);
