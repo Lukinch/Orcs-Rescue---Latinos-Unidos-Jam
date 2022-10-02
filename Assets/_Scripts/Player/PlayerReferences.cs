@@ -10,6 +10,7 @@ public class PlayerReferences : MonoBehaviour
     [SerializeField] Rigidbody _playerRigidbody;
     [SerializeField] PlayerInput _playerInput;
     [SerializeField] PlayerController _playerController;
+    [SerializeField] PlayerInputController _playerInputController;
     [SerializeField] Animator _playerAnimator;
 
     public GameObject Visuals { get => _visuals; }
@@ -17,6 +18,7 @@ public class PlayerReferences : MonoBehaviour
     public Rigidbody PlayerRigidbody { get => _playerRigidbody; }
     public PlayerInput PlayerInput { get => _playerInput; }
     public PlayerController PlayerController { get => _playerController; }
+    public PlayerInputController PlayerInputController { get => _playerInputController; }
     public Animator PlayerAnimator { get => _playerAnimator; }
 
     public bool AreVisualsVisible() => _visuals.activeInHierarchy;

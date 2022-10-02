@@ -43203,6 +43203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInputManager: {fileID: 1131564212}
+  _deathAnimation: {fileID: 7400000, guid: 0a205e82d4075b346b912ccfe0a0bfd2, type: 3}
 --- !u!1 &1132628864
 GameObject:
   m_ObjectHideFlags: 0

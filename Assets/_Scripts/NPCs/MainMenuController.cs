@@ -4,24 +4,23 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] PlayerInputManager _playerInputManager;
     [SerializeField] GameObject _pressAnyButton;
     [SerializeField] GameObject _buttonContainer;
     [SerializeField] GameObject _settingsObject;
     [SerializeField] AudioClip _newGameSound;
 
-    void Awake() => _playerInputManager.onPlayerJoined += OnPlayerCreated;
-
     void Start()
     {
         GameStateController.Instance.CurrentGameState = GameStateController.GameState.MAIN_MENU;
+        AudioManager.Instance.PlayMainMenuMusic();
+        PlayerManager.Instance.OnNewPlayerJoined += OnPlayerCreated;
     }
 
-    void OnDestroy() => _playerInputManager.onPlayerJoined -= OnPlayerCreated;
+    void OnDestroy() => PlayerManager.Instance.OnNewPlayerJoined -= OnPlayerCreated;
 
-    private void OnPlayerCreated(PlayerInput playerInput)
+    private void OnPlayerCreated()
     {
-        _playerInputManager.onPlayerJoined -= OnPlayerCreated;
+        Debug.Log("hola");
         _pressAnyButton.SetActive(false);
         _buttonContainer.SetActive(true);
     }

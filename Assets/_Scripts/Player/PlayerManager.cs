@@ -11,6 +11,9 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] PlayerInputManager _playerInputManager;
 
+    // Just to get the timer, that's it
+    [SerializeField] AnimationClip _deathAnimation;
+
     PlayerInput _playerInput;
     PlayerReferences _playerReferences;
 
@@ -18,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     public PlayerReferences PlayerReferences { get => _playerReferences; }
 
     public static PlayerManager Instance { get; private set; }
+    public event Action OnNewPlayerJoined;
 
     bool isPlayerDead;
 
@@ -44,6 +48,7 @@ public class PlayerManager : MonoBehaviour
 
     private void OnPlayerCreated(PlayerInput playerInput)
     {
+        OnNewPlayerJoined?.Invoke();
         DontDestroyOnLoad(playerInput.gameObject);
         _playerInput = playerInput;
         _playerInputManager.DisableJoining();
@@ -89,6 +94,8 @@ public class PlayerManager : MonoBehaviour
         DisablePlayerInteraction();
         PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_RESPAWN_TRIGGERED);
         PlayerReferences.PlayerAnimator.SetTrigger(ANIM_DEAD_TRIGGERED);
+
+        StartCoroutine(WaitForDeathAnimation(_deathAnimation.length + 1));
     }
 
     public void RespawnPlayer()
@@ -97,5 +104,21 @@ public class PlayerManager : MonoBehaviour
         EnablePlayerInteraction();
         PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_DEAD_TRIGGERED);
         PlayerReferences.PlayerAnimator.SetTrigger(ANIM_RESPAWN_TRIGGERED);
+    }
+
+    public void ClearPlayer()
+    {
+        _playerInput = null;
+        _playerReferences = null;
+
+        _playerInputManager.onPlayerJoined += OnPlayerCreated;
+        _playerInputManager.EnableJoining();
+    }
+
+    IEnumerator WaitForDeathAnimation(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+
+        PlayerReferences.PlayerInputController.OnDeath();
     }
 }
