@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
+    readonly int ANIM_DEAD_TRIGGERED = Animator.StringToHash("Death");
+    readonly int ANIM_RESPAWN_TRIGGERED = Animator.StringToHash("Respawn");
+
     [SerializeField] PlayerInputManager _playerInputManager;
 
     PlayerInput _playerInput;
@@ -15,6 +18,8 @@ public class PlayerManager : MonoBehaviour
     public PlayerReferences PlayerReferences { get => _playerReferences; }
 
     public static PlayerManager Instance { get; private set; }
+
+    bool isPlayerDead;
 
 
     void Awake()
@@ -52,6 +57,16 @@ public class PlayerManager : MonoBehaviour
         playerInput.SwitchCurrentActionMap("UI");
     }
 
+    public void DisablePlayerInteraction()
+    {
+        _playerReferences.EnableControllerScript();
+    }
+
+    public void EnablePlayerInteraction()
+    {
+        _playerReferences.EnableControllerScript();
+    }
+
     public void EnablePlayerInteractionAndCamera()
     {
         _playerReferences.EnableCameras();
@@ -62,5 +77,25 @@ public class PlayerManager : MonoBehaviour
     {
         _playerReferences.DisableCameras();
         _playerReferences.DisableControllerScript();
+    }
+
+    public void OnPlayerDeath()
+    {
+        if (isPlayerDead)
+        {
+            return;
+        }
+        isPlayerDead = true;
+        DisablePlayerInteraction();
+        PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_RESPAWN_TRIGGERED);
+        PlayerReferences.PlayerAnimator.SetTrigger(ANIM_DEAD_TRIGGERED);
+    }
+
+    public void RespawnPlayer()
+    {
+        isPlayerDead = false;
+        EnablePlayerInteraction();
+        PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_DEAD_TRIGGERED);
+        PlayerReferences.PlayerAnimator.SetTrigger(ANIM_RESPAWN_TRIGGERED);
     }
 }

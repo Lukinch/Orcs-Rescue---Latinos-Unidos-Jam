@@ -10,12 +10,14 @@ public class PlayerReferences : MonoBehaviour
     [SerializeField] Rigidbody _playerRigidbody;
     [SerializeField] PlayerInput _playerInput;
     [SerializeField] PlayerController _playerController;
+    [SerializeField] Animator _playerAnimator;
 
     public GameObject Visuals { get => _visuals; }
     public GameObject CamerasParent { get => _camerasParent; }
     public Rigidbody PlayerRigidbody { get => _playerRigidbody; }
     public PlayerInput PlayerInput { get => _playerInput; }
     public PlayerController PlayerController { get => _playerController; }
+    public Animator PlayerAnimator { get => _playerAnimator; }
 
     public bool AreVisualsVisible() => _visuals.activeInHierarchy;
     public void EnableVisuals() => _visuals.SetActive(true);

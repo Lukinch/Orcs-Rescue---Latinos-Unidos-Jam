@@ -23,12 +23,6 @@ public class GameStateController : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    public void InstantiatePlayer(Transform spawnPoint)
-    {
-        GameObject playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-        DontDestroyOnLoad (playerInstance);
-    }
-
     void OnRuneActivated(RuneType runeType)
     {
         switch (runeType)

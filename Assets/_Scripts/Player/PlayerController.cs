@@ -175,6 +175,14 @@ public class PlayerController : MonoBehaviour
         _playerVisuals.forward = Vector3.Slerp(_playerVisuals.forward, _visualsForwardDirection, Time.deltaTime * _playerRotationSpeed);
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(Tags.DAMAGER))
+        {
+            PlayerManager.Instance.OnPlayerDeath();
+        }
+    }
+
     #region ANIMATIONS
     void UpdateAnimationVelocity()
     {
