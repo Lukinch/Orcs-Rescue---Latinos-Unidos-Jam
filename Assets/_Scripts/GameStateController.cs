@@ -95,6 +95,9 @@ public class GameStateController : MonoBehaviour
         FRONT_WING_COMPLETED,
         ENDING_CINEMATIC,
         GAME_COMPLETED,
-        MAIN_MENU
+        MAIN_MENU,
+        FRONT_WING_CHALLENGE_1_COMPLETED,
+        FRONT_WING_CHALLENGE_2_COMPLETED,
+        FRONT_WING_CHALLENGE_3_COMPLETED
     }
 }
