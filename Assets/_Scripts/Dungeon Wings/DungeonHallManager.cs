@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,9 +13,6 @@ public class DungeonHallManager : MonoBehaviour
 
     void Awake()
     {
-        PlayerManager.Instance.PlayerInput.gameObject.transform.SetPositionAndRotation(
-            playerInitialSpawnPoint.position, playerInitialSpawnPoint.rotation);
-
         CheckState();
     }
 
@@ -25,6 +21,8 @@ public class DungeonHallManager : MonoBehaviour
         switch (GameStateController.Instance.CurrentGameState)
         {
             case GameStateController.GameState.ENTERING_GAME:
+                PlayerManager.Instance.PlayerInput.gameObject.transform.SetPositionAndRotation(
+                    playerInitialSpawnPoint.position, playerInitialSpawnPoint.rotation);
                 EnableLeftWing();
                 break;
             case GameStateController.GameState.LEFT_WING_NOT_COMPLETED:

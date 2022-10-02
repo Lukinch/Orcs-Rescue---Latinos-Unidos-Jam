@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using static Rune;
 
 public class FrontWingManager : WingManager
@@ -12,7 +9,7 @@ public class FrontWingManager : WingManager
     override protected void OnCinematicStarted()
     {
         base.OnCinematicStarted();
-        Invoke(nameof(FadeCamera), 15f);
+        Invoke(nameof(FadeCamera), 12f);
     }
 
     void FadeCamera()
