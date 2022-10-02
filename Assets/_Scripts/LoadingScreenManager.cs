@@ -15,7 +15,11 @@ public class LoadingScreenManager : MonoBehaviour
                 StartCoroutine(LoadGameScenes());
                 break;
             case GameStateController.GameState.ENDING_CINEMATIC:
-                LoadEndingCinematicScene();
+                StartCoroutine(LoadEndingCinematicScene());
+                break;
+            case GameStateController.GameState.MAIN_MENU:
+            case GameStateController.GameState.GAME_COMPLETED:
+                LoadMainMenu();
                 break;
         }
     }
@@ -49,8 +53,21 @@ public class LoadingScreenManager : MonoBehaviour
         SceneManager.UnloadSceneAsync(Scenes.LOADING_SCREEN);
     }
 
-    void LoadEndingCinematicScene()
+    IEnumerator LoadEndingCinematicScene()
     {
+        AsyncOperation endingCinematicOperation = SceneManager.LoadSceneAsync(Scenes.ENDING_CINEMATIC_SCENE);
+        endingCinematicOperation.allowSceneActivation = false;
+        while (endingCinematicOperation.progress < 0.9)
+        {
+            yield return new WaitForEndOfFrame();
+        }
 
+        endingCinematicOperation.allowSceneActivation = true;
+        SceneManager.UnloadSceneAsync(Scenes.LOADING_SCREEN);
+    }
+
+    void LoadMainMenu()
+    {
+        SceneManager.LoadScene(Scenes.MAIN_MENU);
     }
 }

@@ -75,6 +75,13 @@ public class DungeonHallManager : MonoBehaviour
     {
         StartCoroutine(CloseGate(frontWingGate));
         SceneManager.UnloadSceneAsync(Scenes.DUNGEON_FRONT_WING_CONNECTOR);
+
+        Invoke(nameof(NotifyAllOrcsRescued), 1.5f);
+    }
+
+    void NotifyAllOrcsRescued()
+    {
+        GameStateController.Instance.OnAllOrcsRescued();
     }
 
     void EnableLeftWing()

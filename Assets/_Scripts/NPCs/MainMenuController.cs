@@ -12,6 +12,11 @@ public class MainMenuController : MonoBehaviour
 
     void Awake() => _playerInputManager.onPlayerJoined += OnPlayerCreated;
 
+    void Start()
+    {
+        GameStateController.Instance.CurrentGameState = GameStateController.GameState.MAIN_MENU;
+    }
+
     void OnDestroy() => _playerInputManager.onPlayerJoined -= OnPlayerCreated;
 
     private void OnPlayerCreated(PlayerInput playerInput)

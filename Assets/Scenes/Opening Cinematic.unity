@@ -7726,6 +7726,7 @@ GameObject:
   - component: {fileID: 963850624}
   - component: {fileID: 963850623}
   - component: {fileID: 963850622}
+  - component: {fileID: 963850627}
   m_Layer: 0
   m_Name: Camera0
   m_TagString: Untagged
@@ -7852,6 +7853,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -0.0004749456, y: -0.0009896675, z: 0.0002201076}
+--- !u!114 &963850627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963850621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4f0382edc23f14498bdb28f5d3f807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.99938965
+      inSlope: -0.5039752
+      outSlope: -0.5039752
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.9998474
+      value: -0.008483887
+      inSlope: -0.5039752
+      outSlope: -0.5039752
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &964607537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11810,26 +11847,17 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.20386031
-      outSlope: 0.20386031
+      inSlope: 0.16526355
+      outSlope: 0.16526355
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 5.000853
-      value: 1.0194755
-      inSlope: 0.22831737
-      outSlope: 0.22831737
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 5.959673
-      value: 1.2618406
-      inSlope: 0.25277442
-      outSlope: 0.25277442
+      time: 6.005144
+      value: 0.9924314
+      inSlope: 0.16526355
+      outSlope: 0.16526355
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static Rune;
 
 public class GameStateController : MonoBehaviour
@@ -58,8 +59,20 @@ public class GameStateController : MonoBehaviour
         }
     }
 
+    public void OnBackToMainMenu()
+    {
+        CurrentGameState = GameState.MAIN_MENU;
+    }
+
+    public void OnAllOrcsRescued()
+    {
+        CurrentGameState = GameState.ENDING_CINEMATIC;
+        SceneManager.LoadScene(Scenes.LOADING_SCREEN);
+    }
+
     public enum GameState
     {
+        MAIN_MENU,
         OPENING_CINEMATIC,
         ENTERING_GAME,
         LEFT_WING_NOT_COMPLETED,
@@ -68,6 +81,7 @@ public class GameStateController : MonoBehaviour
         RIGHT_WING_COMPLETED,
         FRONT_WING_NOT_COMPLETED,
         FRONT_WING_COMPLETED,
-        ENDING_CINEMATIC
+        ENDING_CINEMATIC,
+        GAME_COMPLETED
     }
 }
