@@ -88,7 +88,7 @@ public class PlayerInputController : MonoBehaviour
         Cursor.visible = false;
         AudioManager.Instance.Resume();
         IsShowingDeathScreen = false;
-        // TODO: Implement Respawn logic here, button is already bound to this method
+        PlayerManager.Instance.RespawnPlayer();
     }
 
     public void ExitGame()

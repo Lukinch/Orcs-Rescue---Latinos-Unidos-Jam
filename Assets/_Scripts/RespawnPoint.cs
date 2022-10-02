@@ -14,4 +14,9 @@ public class RespawnPoint : MonoBehaviour
     {
             gameObject.SetActive(activetedGameState == gameState);
     }
+
+    private void OnDestroy()
+    {
+        GameStateController.OnGameStateChanged -= OnGameStateChanged;
+    }
 }
