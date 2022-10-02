@@ -111,6 +111,7 @@ public class PlayerManager : MonoBehaviour
 
     public void ClearPlayer()
     {
+        Destroy(_playerReferences.gameObject);
         _playerInput = null;
         _playerReferences = null;
 
