@@ -924,31 +924,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff3d2c955becf14f9118bc522c1dc32, type: 3}
---- !u!1 &1817966967 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 180336, guid: cff3d2c955becf14f9118bc522c1dc32,
-    type: 3}
-  m_PrefabInstance: {fileID: 1817966966}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1817966968 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 9094418264809896120, guid: cff3d2c955becf14f9118bc522c1dc32,
-    type: 3}
-  m_PrefabInstance: {fileID: 1817966966}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1817966969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817966967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0098ad931d195844804abd55a067b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 1817966968}
 --- !u!1001 &8381163285575980969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1006,31 +981,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67269eb32a37ef246ba5209ae63a2ec4, type: 3}
---- !u!1 &8381163285575980970 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 196148, guid: 67269eb32a37ef246ba5209ae63a2ec4,
-    type: 3}
-  m_PrefabInstance: {fileID: 8381163285575980969}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &8381163285575980971 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2135778417, guid: 67269eb32a37ef246ba5209ae63a2ec4,
-    type: 3}
-  m_PrefabInstance: {fileID: 8381163285575980969}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8381163285575980972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8381163285575980970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0098ad931d195844804abd55a067b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 8381163285575980971}
 --- !u!1001 &8821525971237795477
 PrefabInstance:
   m_ObjectHideFlags: 0

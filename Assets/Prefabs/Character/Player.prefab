@@ -6411,6 +6411,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 275888643245948530, guid: 8ba3204f4898e114d87180a9d74b1dbb,
+        type: 3}
+      propertyPath: m_text
+      value: Main Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 293294285438268104, guid: 8ba3204f4898e114d87180a9d74b1dbb,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Menu Button
+      objectReference: {fileID: 0}
     - target: {fileID: 779548180683519405, guid: 8ba3204f4898e114d87180a9d74b1dbb,
         type: 3}
       propertyPath: m_AnchorMax.x

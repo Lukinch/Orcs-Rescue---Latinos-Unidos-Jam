@@ -7,6 +7,8 @@ public class RuneMovable : RuneListener
     [SerializeField] Vector3 direction;
     [SerializeField] float distance;
     [SerializeField] float movingSpeed;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip soundToPlay;
 
     protected override void TriggerMechanism()
     {
@@ -17,6 +19,12 @@ public class RuneMovable : RuneListener
         }
         else
         {
+            if (soundToPlay)
+            {
+                audioSource.clip = soundToPlay;
+                audioSource.loop = false;
+                audioSource.Play();
+            }
             StartCoroutine(MoveObstacleCoroutine());
         }
     }
@@ -30,6 +38,7 @@ public class RuneMovable : RuneListener
             transform.position = Vector3.MoveTowards(transform.position, target, movingSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
+        if (soundToPlay) audioSource.Stop();
         Debug.Log("Obstacle Moved");
     }
 }
