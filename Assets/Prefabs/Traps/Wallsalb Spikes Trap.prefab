@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6007778011011246239}
   - component: {fileID: 2135778417}
   - component: {fileID: 2135778425}
+  - component: {fileID: 2366020519365565676}
   m_Layer: 3
   m_Name: Wallsalb Spikes Trap
   m_TagString: Damager
@@ -170,7 +171,7 @@ AudioSource:
   Priority: 129
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -265,3 +266,16 @@ MonoBehaviour:
   audioSource: {fileID: 2135778417}
   pikeClips:
   - {fileID: 8300000, guid: c273c729786ebf04285f13c4e17691ed, type: 3}
+--- !u!114 &2366020519365565676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0098ad931d195844804abd55a067b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 2135778417}

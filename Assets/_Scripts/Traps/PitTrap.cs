@@ -22,7 +22,7 @@ public class PitTrap : MonoBehaviour
         trapOpened = true;
         foreach (PitTrapDoor trapDoor in trapDoors)
         {
-            audioSource.PlayOneShot(openClip);
+            audioSource.PlayOneShot(openClip, audioSource.volume);
             trapDoor.Open();
         }
     }
@@ -33,7 +33,7 @@ public class PitTrap : MonoBehaviour
         {
             foreach (PitTrapDoor trapDoor in trapDoors)
             {
-                audioSource.PlayOneShot(shakeClip);
+                audioSource.PlayOneShot(shakeClip, audioSource.volume);
                 trapDoor.Shake(shakeTime);
             }
 

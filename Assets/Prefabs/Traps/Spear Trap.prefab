@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 167369610}
   - component: {fileID: 8052110888422602390}
   - component: {fileID: 1455365307790707184}
+  - component: {fileID: 2096635856911080216}
   m_Layer: 3
   m_Name: SM_Trap_Spears_01
   m_TagString: Damager
@@ -157,7 +158,7 @@ AudioSource:
   Priority: 129
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -256,6 +257,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d0a783e27fe3b2b42945669ad39fad34, type: 3}
   - {fileID: 8300000, guid: eb913e076c3b3004297c0fba246b276b, type: 3}
   - {fileID: 8300000, guid: caf2e845c05f6114b86dc713c0e80436, type: 3}
+--- !u!114 &2096635856911080216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948404990641784499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0098ad931d195844804abd55a067b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 8052110888422602390}
 --- !u!1 &1948404991659029397
 GameObject:
   m_ObjectHideFlags: 0

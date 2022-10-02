@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1774034016}
   - component: {fileID: 1774034020}
   - component: {fileID: 9094418264809896120}
+  - component: {fileID: 6227260166812734592}
   m_Layer: 3
   m_Name: Flame Head Trap
   m_TagString: Damager
@@ -138,7 +139,7 @@ AudioSource:
   Priority: 129
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -213,6 +214,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6227260166812734592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0098ad931d195844804abd55a067b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 9094418264809896120}
 --- !u!1001 &213536673
 PrefabInstance:
   m_ObjectHideFlags: 0

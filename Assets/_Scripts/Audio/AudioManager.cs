@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,14 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource _audioSource;
+    [SerializeField] AudioClip _mainMenuClip;
     [SerializeField] AudioClip[] _backgroundAudioClips;
 
     public static AudioManager Instance { get; private set; }
     public AudioSource AudioSource { get => _audioSource; }
+
+    public event Action OnGamePaused;
+    public event Action OnGameResumed;
 
     bool isPlayingLevelBGM;
 
@@ -25,7 +30,11 @@ public class AudioManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(this);
-        isPlayingLevelBGM = true;
+    }
+
+    void Start()
+    {
+        PlayMainMenuMusic();
     }
 
     void Update()
@@ -34,20 +43,25 @@ public class AudioManager : MonoBehaviour
 
         if ((_audioSource.clip.length - _audioSource.time) < 1)
         {
-            int index = Random.Range(0, _backgroundAudioClips.Length);
+            int index = UnityEngine.Random.Range(0, _backgroundAudioClips.Length);
             while (_audioSource.clip == _backgroundAudioClips[index])
             {
-                index = Random.Range(0, _backgroundAudioClips.Length);
+                index = UnityEngine.Random.Range(0, _backgroundAudioClips.Length);
             }
             ChangeCurrentTrack(_backgroundAudioClips[index]);
         }
     }
 
-    public void Pause() => _audioSource.Pause();
+    public void Pause()
+    {
+        _audioSource.Pause();
+        OnGamePaused?.Invoke();
+    }
     public void Resume()
     {
         _audioSource.UnPause();
         isPlayingLevelBGM = true;
+        OnGameResumed?.Invoke();
     }
     public void Stop()
     {
@@ -62,8 +76,14 @@ public class AudioManager : MonoBehaviour
     }
     public void StartPlayingBGM()
     {
-        int index = Random.Range(0, _backgroundAudioClips.Length);
+        int index = UnityEngine.Random.Range(0, _backgroundAudioClips.Length);
         ChangeCurrentTrack(_backgroundAudioClips[index]);
         isPlayingLevelBGM = true;
+    }
+    public void PlayMainMenuMusic()
+    {
+        _audioSource.clip = _mainMenuClip;
+        _audioSource.loop = true;
+        _audioSource.Play();
     }
 }

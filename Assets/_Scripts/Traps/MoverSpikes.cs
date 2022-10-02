@@ -18,7 +18,7 @@ public class MoverSpikes : Mover
                     rigidbody.MovePosition(Vector3.MoveTowards(rigidbody.position, targetPosition, moveToTargetVelocity * Time.fixedDeltaTime));
                     if (rigidbody.position == targetPosition)
                     {
-                        audioSource.PlayOneShot(pikeClips[Random.Range(0, pikeClips.Length)]);
+                        audioSource.PlayOneShot(pikeClips[Random.Range(0, pikeClips.Length)], audioSource.volume);
                         ChangeMovement();
                     }
                 }
