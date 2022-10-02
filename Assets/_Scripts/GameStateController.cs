@@ -5,8 +5,8 @@ public class GameStateController : MonoBehaviour
 {
     public static GameStateController Instance { get;  private set; }
     public GameState CurrentGameState;
-    [SerializeField] GameObject playerPrefab;
     bool frontWingLeftRuneActivated, frontWingRightRuneActivated, frontWingFrontRuneActivated;
+
     void Awake()
     {
         if (Instance != null && Instance != this)
