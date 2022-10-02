@@ -79,6 +79,7 @@ public class GameStateController : MonoBehaviour
 
     public void OnAllOrcsRescued()
     {
+        PlayerPrefs.SetInt("GameWon", 1);
         CurrentGameState = GameState.ENDING_CINEMATIC;
         SceneManager.LoadScene(Scenes.LOADING_SCREEN);
     }

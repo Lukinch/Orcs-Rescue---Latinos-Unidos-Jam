@@ -38,6 +38,16 @@ public class PlayerSelectorManager : MonoBehaviour
         CurrentPlayerModel = playerModel;
     }
 
+    public bool IsPlayerModelUnlocked(PlayerModel playerModel)
+    {
+        if (playerModel == PlayerModel.MALE_HERO || playerModel == PlayerModel.FEMALE_HERO)
+        {
+            return true;
+        }
+
+        return PlayerPrefs.GetInt("GameWon", 0) == 1;
+    }
+
     public enum PlayerModel
     {
         MALE_HERO,
