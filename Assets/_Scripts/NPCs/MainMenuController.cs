@@ -26,7 +26,7 @@ public class MainMenuController : MonoBehaviour
 
     public void StartNewGame()
     {
-        GameStateController.Instance.CurrentGameState = GameStateController.GameState.ENTERING_GAME;
+        GameStateController.Instance.CurrentGameState = GameStateController.GameState.OPENING_CINEMATIC;
         AudioManager.Instance.Stop();
         //AudioManager.Instance.AudioSource.PlayOneShot(_newGameSound);
 

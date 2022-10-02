@@ -9,7 +9,7 @@ public class LoadingScreenManager : MonoBehaviour
         switch(GameStateController.Instance.CurrentGameState)
         {
             case GameStateController.GameState.OPENING_CINEMATIC:
-                LoadOpeningCinematicScene();
+                StartCoroutine(LoadOpeningCinematicScene());
                 break;
             case GameStateController.GameState.ENTERING_GAME:
                 StartCoroutine(LoadGameScenes());
@@ -20,9 +20,17 @@ public class LoadingScreenManager : MonoBehaviour
         }
     }
 
-    void LoadOpeningCinematicScene()
+    IEnumerator LoadOpeningCinematicScene()
     {
+        AsyncOperation openingCinematicOperation = SceneManager.LoadSceneAsync(Scenes.OPENING_CINEMATIC_SCENE);
+        openingCinematicOperation.allowSceneActivation = false;
+        while (openingCinematicOperation.progress < 0.9)
+        {
+            yield return new WaitForEndOfFrame();
+        }
 
+        openingCinematicOperation.allowSceneActivation = true;
+        SceneManager.UnloadSceneAsync(Scenes.LOADING_SCREEN);
     }
 
     IEnumerator LoadGameScenes()

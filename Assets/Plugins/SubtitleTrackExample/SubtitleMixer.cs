@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.Playables;
-using UnityEngine.UI;
+using TMPro;
 
 public class SubtitleMixer : PlayableBehaviour {
 
     // Called each frame the mixer is active, after inputs are processed
     public override void ProcessFrame(Playable handle, FrameData info, object playerData) {
-        var textObject = playerData as Text;
+        var textObject = playerData as TextMeshProUGUI;
         if (textObject == null)
             return;
 
