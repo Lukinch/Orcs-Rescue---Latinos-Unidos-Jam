@@ -59,7 +59,7 @@ public class PlayerManager : MonoBehaviour
 
     public void DisablePlayerInteraction()
     {
-        _playerReferences.EnableControllerScript();
+        _playerReferences.DisableControllerScript();
     }
 
     public void EnablePlayerInteraction()

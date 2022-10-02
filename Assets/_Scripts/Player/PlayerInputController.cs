@@ -44,6 +44,10 @@ public class PlayerInputController : MonoBehaviour
 
     public void ExitGame()
     {
-        SceneManager.LoadScene(0);
+        PlayerManager.Instance.PlayerReferences.PlayerInput.SwitchCurrentActionMap("UI");
+        _pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        AudioManager.Instance.Resume();
+        SceneManager.LoadScene(Scenes.MAIN_MENU);
     }
 }

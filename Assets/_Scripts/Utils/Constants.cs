@@ -6,7 +6,7 @@ public static class Tags
 
 public static class Scenes
 {
-    public const string MAIN_MENU = "Main Menu";
+    public const string MAIN_MENU = "MainMenu";
     public const string LOADING_SCREEN = "LoadingScene";
     public const string OPENING_CINEMATIC_SCENE = "Opening Cinematic";
     public const string ENDING_CINEMATIC_SCENE = "Ending Cinematic";

@@ -72,7 +72,6 @@ public class GameStateController : MonoBehaviour
 
     public enum GameState
     {
-        MAIN_MENU,
         OPENING_CINEMATIC,
         ENTERING_GAME,
         LEFT_WING_NOT_COMPLETED,
@@ -82,6 +81,7 @@ public class GameStateController : MonoBehaviour
         FRONT_WING_NOT_COMPLETED,
         FRONT_WING_COMPLETED,
         ENDING_CINEMATIC,
-        GAME_COMPLETED
+        GAME_COMPLETED,
+        MAIN_MENU
     }
 }
