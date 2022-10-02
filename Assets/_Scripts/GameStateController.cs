@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using static Rune;
@@ -5,7 +6,19 @@ using static Rune;
 public class GameStateController : MonoBehaviour
 {
     public static GameStateController Instance { get;  private set; }
-    public GameState CurrentGameState;
+    GameState currentGameState;
+    public GameState CurrentGameState
+    {
+        get => currentGameState; 
+        set
+        {
+            currentGameState = value;
+            OnGameStateChanged?.Invoke(currentGameState);
+        }
+    }
+
+    public static event Action<GameState> OnGameStateChanged;
+
     bool frontWingLeftRuneActivated, frontWingRightRuneActivated, frontWingFrontRuneActivated;
 
     void Awake()
