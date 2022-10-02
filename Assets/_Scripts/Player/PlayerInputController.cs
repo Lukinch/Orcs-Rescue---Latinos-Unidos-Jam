@@ -102,6 +102,5 @@ public class PlayerInputController : MonoBehaviour
         AudioManager.Instance.Resume();
         PlayerManager.Instance.ClearPlayer();
         SceneManager.LoadScene(Scenes.MAIN_MENU);
-        Destroy(gameObject);
     }
 }
