@@ -4978,6 +4978,7 @@ GameObject:
   - component: {fileID: 3806672442149257977}
   - component: {fileID: 6427966530177128315}
   - component: {fileID: 948361607156437385}
+  - component: {fileID: 522076445868481916}
   m_Layer: 6
   m_Name: Visuals
   m_TagString: Untagged
@@ -5158,6 +5159,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &522076445868481916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806672442139839283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3fc88ba7bf7f447ae64d90546f04ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maleHero: {fileID: 3806672442139630953}
+  femaleHero: {fileID: 3806672442139647589}
+  maleOrcHero: {fileID: 3806672442139641489}
+  femaleOrcHero: {fileID: 3806672442139622881}
 --- !u!1 &3806672442139839583
 GameObject:
   m_ObjectHideFlags: 0
