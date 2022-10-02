@@ -6,7 +6,9 @@ public class FlameCollisionDetector : MonoBehaviour
 {
     private void OnParticleCollision(GameObject other)
     {
-        //TODO: Kill Player
-        Debug.Log("Collides!!!");
+        if (other.CompareTag(Tags.PLAYER))
+        {
+            PlayerManager.Instance.OnPlayerDeath();
+        }
     }
 }
