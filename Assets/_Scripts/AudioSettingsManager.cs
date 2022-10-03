@@ -31,8 +31,8 @@ public class AudioSettingsManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            LoadVolumeData();
         }
-        LoadVolumeData();
     }
 
     private void SaveVolumeData()

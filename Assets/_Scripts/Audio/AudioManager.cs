@@ -32,11 +32,6 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    void Start()
-    {
-        PlayMainMenuMusic();
-    }
-
     void Update()
     {
         if (!isPlayingLevelBGM) return;
@@ -81,10 +76,14 @@ public class AudioManager : MonoBehaviour
         _audioSource.loop = false;
         isPlayingLevelBGM = true;
     }
-    public void PlayMainMenuMusic()
+    void PlayMainMenuMusic()
     {
         _audioSource.clip = _mainMenuClip;
         _audioSource.loop = true;
         _audioSource.Play();
+    }
+    public void PlayMainMenuMusicDelayed()
+    {
+        Invoke(nameof(PlayMainMenuMusic), 0.2f);
     }
 }

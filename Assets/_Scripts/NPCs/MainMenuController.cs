@@ -12,7 +12,7 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         GameStateController.Instance.CurrentGameState = GameStateController.GameState.MAIN_MENU;
-        AudioManager.Instance.PlayMainMenuMusic();
+        AudioManager.Instance.PlayMainMenuMusicDelayed();
         PlayerManager.Instance.OnNewPlayerJoined += OnPlayerCreated;
     }
 
