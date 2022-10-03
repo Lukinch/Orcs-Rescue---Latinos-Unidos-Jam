@@ -27,9 +27,8 @@ public class Credits : MonoBehaviour
 
     void OnCreditsEnded()
     {
-        if (PlayerManager.Instance) PlayerManager.Instance.ClearPlayer();
-
-        SceneManager.LoadScene(Scenes.MAIN_MENU);
+        GameStateController.Instance.CurrentGameState = GameStateController.GameState.MAIN_MENU;
+        SceneManager.LoadScene(Scenes.LOADING_SCREEN);
     }
 
     public void EnableInputs()

@@ -38,6 +38,12 @@ public class MainMenuController : MonoBehaviour
         Cursor.visible = false;
     }
 
+    public void LoadCredits()
+    {
+        AudioManager.Instance.Stop();
+        SceneManager.LoadScene(Scenes.CREDITS);
+    }
+
     public void ExitGame()
     {
 #if UNITY_EDITOR

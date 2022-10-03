@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,7 +7,7 @@ public class LoadingScreenManager : MonoBehaviour
 {
     void Awake()
     {
-        switch(GameStateController.Instance.CurrentGameState)
+        switch (GameStateController.Instance.CurrentGameState)
         {
             case GameStateController.GameState.OPENING_CINEMATIC:
                 StartCoroutine(LoadOpeningCinematicScene());
@@ -18,8 +19,10 @@ public class LoadingScreenManager : MonoBehaviour
                 StartCoroutine(LoadEndingCinematicScene());
                 break;
             case GameStateController.GameState.MAIN_MENU:
-            case GameStateController.GameState.GAME_COMPLETED:
                 LoadMainMenu();
+                break;
+            case GameStateController.GameState.GAME_COMPLETED:
+                LoadCreditsScene();
                 break;
         }
     }
@@ -43,7 +46,7 @@ public class LoadingScreenManager : MonoBehaviour
         dungeonHallOperation.allowSceneActivation = false;
         AsyncOperation leftWingConnectorOperation = SceneManager.LoadSceneAsync(Scenes.DUNGEON_LEFT_WING_CONNECTOR, LoadSceneMode.Additive);
         leftWingConnectorOperation.allowSceneActivation = false;
-        while(dungeonHallOperation.progress < 0.9 || leftWingConnectorOperation.progress < 0.9)
+        while (dungeonHallOperation.progress < 0.9 || leftWingConnectorOperation.progress < 0.9)
         {
             yield return new WaitForEndOfFrame();
         }
@@ -68,6 +71,13 @@ public class LoadingScreenManager : MonoBehaviour
 
     void LoadMainMenu()
     {
+        if (PlayerManager.Instance) PlayerManager.Instance.ClearPlayer();
         SceneManager.LoadScene(Scenes.MAIN_MENU);
+    }
+
+    void LoadCreditsScene()
+    {
+        if (PlayerManager.Instance) PlayerManager.Instance.ClearPlayer();
+        SceneManager.LoadScene(Scenes.CREDITS);
     }
 }

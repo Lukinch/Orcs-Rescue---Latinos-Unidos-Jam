@@ -18,4 +18,5 @@ public static class Scenes
     public const string DUNGEON_RIGHT_WING = "Dungeon - Right Wing";
     public const string DUNGEON_FRONT_WING_CONNECTOR = "Front Wing Connector";
     public const string DUNGEON_FRONT_WING = "Dungeon - Front Wing";
+    public const string CREDITS = "Credits Scene";
 }
