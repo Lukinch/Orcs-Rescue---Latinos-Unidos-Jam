@@ -14,4 +14,12 @@ public class PlayerSelectionButton : MonoBehaviour
             PlayerSelectorManager.Instance.SelectPlayer(playerModel);
         });
     }
+
+    void Start()
+    {
+        if (!PlayerSelectorManager.Instance.IsPlayerModelUnlocked(playerModel))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }
