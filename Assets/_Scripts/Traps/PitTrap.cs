@@ -14,7 +14,13 @@ public class PitTrap : MonoBehaviour
 
     void Awake()
     {
+        PlayerManager.OnPlayerRespawned += ResetTrap;
         trapDoors = GetComponentsInChildren<PitTrapDoor>();
+    }
+
+    void OnDestroy()
+    {
+        PlayerManager.OnPlayerRespawned -= ResetTrap; 
     }
 
     void OpenTrapDoors()
@@ -53,5 +59,15 @@ public class PitTrap : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(timeToOpen);
         OpenTrapDoors();
+    }
+
+    void ResetTrap()
+    {
+        StopAllCoroutines();
+        trapOpened = false;
+        foreach (PitTrapDoor trapDoor in trapDoors)
+        {
+            trapDoor.ResetTrap();
+        }
     }
 }

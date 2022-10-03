@@ -73,4 +73,11 @@ public class PitTrapDoor : MonoBehaviour
 
         rigidbody.rotation = originalRotation;
     }
+
+
+    public void ResetTrap()
+    {
+        StopAllCoroutines();
+        rigidbody.rotation = originalRotation;
+    }
 }

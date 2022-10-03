@@ -107,7 +107,10 @@ public class PlayerManager : MonoBehaviour
         EnablePlayerInteraction();
         PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_DEAD_TRIGGERED);
         PlayerReferences.PlayerAnimator.SetTrigger(ANIM_RESPAWN_TRIGGERED);
+
+        OnPlayerRespawned?.Invoke();
     }
+    public static event Action OnPlayerRespawned;
 
     public void ClearPlayer()
     {
