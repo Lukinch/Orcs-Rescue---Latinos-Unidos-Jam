@@ -58,6 +58,7 @@ public class LoadingScreenManager : MonoBehaviour
 
     IEnumerator LoadEndingCinematicScene()
     {
+        AudioManager.Instance.Stop();
         AsyncOperation endingCinematicOperation = SceneManager.LoadSceneAsync(Scenes.ENDING_CINEMATIC_SCENE);
         endingCinematicOperation.allowSceneActivation = false;
         while (endingCinematicOperation.progress < 0.9)

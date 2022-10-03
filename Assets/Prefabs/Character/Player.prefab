@@ -880,6 +880,7 @@ GameObject:
   - component: {fileID: 2187593177130359543}
   - component: {fileID: 2187593177130359540}
   - component: {fileID: 2187593177130359539}
+  - component: {fileID: 1173615116411476969}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1020,6 +1021,42 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1173615116411476969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2187593177130359544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4f0382edc23f14498bdb28f5d3f807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -1
+      outSlope: 0
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.38333333
+    - serializedVersion: 3
+      time: 2
+      value: 0
+      inSlope: -0.5
+      outSlope: -0.5
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3806672440597843483
 GameObject:
   m_ObjectHideFlags: 0

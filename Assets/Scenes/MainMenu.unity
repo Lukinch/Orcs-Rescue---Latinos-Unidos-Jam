@@ -17316,6 +17316,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
         type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1514598883}
@@ -59412,14 +59422,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
         type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1514598883}
-    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartNewGame
-      objectReference: {fileID: 0}
     - target: {fileID: 2696129050832624384, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
         type: 3}
       propertyPath: playerModel
@@ -73764,6 +73779,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6688731385176686540}
     m_Modifications:
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0.31764707
+      objectReference: {fileID: 0}
     - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -90774,6 +90799,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
         type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995137998286334475, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1514598883}
@@ -90781,6 +90831,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Male Hero Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447138674103723829, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.31764707
       objectReference: {fileID: 0}
     - target: {fileID: 9182879794587018973, guid: c2da9adb3bc6d0641b6ea8dc10e49fee,
         type: 3}
