@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
     {
         if (!isPlayingLevelBGM) return;
 
-        if ((_audioSource.clip.length - _audioSource.time) < 1)
+        if ((_audioSource.clip.length - _audioSource.time) < Mathf.Epsilon)
         {
             int index = UnityEngine.Random.Range(0, _backgroundAudioClips.Length);
             while (_audioSource.clip == _backgroundAudioClips[index])
@@ -78,6 +78,7 @@ public class AudioManager : MonoBehaviour
     {
         int index = UnityEngine.Random.Range(0, _backgroundAudioClips.Length);
         ChangeCurrentTrack(_backgroundAudioClips[index]);
+        _audioSource.loop = false;
         isPlayingLevelBGM = true;
     }
     public void PlayMainMenuMusic()

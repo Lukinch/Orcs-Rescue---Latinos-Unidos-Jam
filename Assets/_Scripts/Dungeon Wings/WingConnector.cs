@@ -28,7 +28,8 @@ public class WingConnector : MonoBehaviour
                     SceneManager.UnloadSceneAsync(Scenes.DUNGEON_MAIN_HALL);
                     StartCoroutine(LoadWing());
                 }
-            } else if (GameStateController.Instance.CurrentGameState == wingCompletedState)
+            }
+            else if (GameStateController.Instance.CurrentGameState == wingCompletedState)
             {
                 if (isHallConnectionDoorClosed)
                 {
