@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+using NaughtyAttributes;
+#endif
 using static Rune;
 
 public class GameStateController : MonoBehaviour
@@ -101,4 +104,12 @@ public class GameStateController : MonoBehaviour
         FRONT_WING_CHALLENGE_2_COMPLETED,
         FRONT_WING_CHALLENGE_3_COMPLETED
     }
+
+#if UNITY_EDITOR
+    [Button]
+    void SimulateGameWon()
+    {
+        OnAllOrcsRescued();
+    }
+#endif
 }

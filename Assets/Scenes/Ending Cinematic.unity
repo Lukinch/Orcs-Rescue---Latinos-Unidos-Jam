@@ -878,17 +878,17 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 3.0056403
       value: 0.0044225827
-      inSlope: 0.19143802
-      outSlope: 0.19143802
+      inSlope: 0.49577287
+      outSlope: 0.49577287
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 8.004974
-      value: 0.96148527
-      inSlope: 0.19143802
-      outSlope: 0.19143802
+      time: 5.003654
+      value: 0.9949836
+      inSlope: 0.49577287
+      outSlope: 0.49577287
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -15224,7 +15224,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1334238542}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1673989290
+--- !u!114 &1673989293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15233,10 +15233,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1673989289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be96d69d6e615824c8e0e05d33255640, type: 3}
+  m_Script: {fileID: 11500000, guid: cf5bc2dfa05b8b243a056834a4e53786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  celebrationAnimations: 1
 --- !u!1 &1676944714
 GameObject:
   m_ObjectHideFlags: 0

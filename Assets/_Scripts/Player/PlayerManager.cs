@@ -114,9 +114,12 @@ public class PlayerManager : MonoBehaviour
 
     public void ClearPlayer()
     {
-        Destroy(_playerReferences.gameObject);
-        _playerInput = null;
-        _playerReferences = null;
+        if (_playerReferences != null)
+        {
+            Destroy(_playerReferences.gameObject);
+            _playerInput = null;
+            _playerReferences = null;
+        }
 
         _playerInputManager.onPlayerJoined += OnPlayerCreated;
         _playerInputManager.EnableJoining();

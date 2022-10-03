@@ -58,7 +58,7 @@ public class LoadingScreenManager : MonoBehaviour
 
     IEnumerator LoadEndingCinematicScene()
     {
-        if (PlayerManager.Instance) PlayerManager.Instance.ClearPlayer();
+        if (PlayerManager.Instance.PlayerReferences) PlayerManager.Instance.ClearPlayer();
         AudioManager.Instance.Stop();
         AsyncOperation endingCinematicOperation = SceneManager.LoadSceneAsync(Scenes.ENDING_CINEMATIC_SCENE);
         endingCinematicOperation.allowSceneActivation = false;
@@ -73,13 +73,12 @@ public class LoadingScreenManager : MonoBehaviour
 
     void LoadMainMenu()
     {
-        if (PlayerManager.Instance) PlayerManager.Instance.ClearPlayer();
+        if (PlayerManager.Instance.PlayerReferences) PlayerManager.Instance.ClearPlayer();
         SceneManager.LoadScene(Scenes.MAIN_MENU);
     }
 
     void LoadCreditsScene()
     {
-        if (PlayerManager.Instance) PlayerManager.Instance.ClearPlayer();
         SceneManager.LoadScene(Scenes.CREDITS);
     }
 }
