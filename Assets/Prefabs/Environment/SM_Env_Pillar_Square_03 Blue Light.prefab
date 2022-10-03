@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1666814482213401107}
   - component: {fileID: 1666814482216308927}
   - component: {fileID: 1666814482215354895}
+  - component: {fileID: 1654811874243604677}
   m_Layer: 0
   m_Name: SM_Env_Pillar_Square_03 Blue Light
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1654811874243604677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666814482213173655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7446556, y: 1.9668026, z: 0.74261856}
+  m_Center: {x: 0.0000019073486, y: 0.9834013, z: 0.0000009536743}
 --- !u!1001 &5811068589784609839
 PrefabInstance:
   m_ObjectHideFlags: 0
