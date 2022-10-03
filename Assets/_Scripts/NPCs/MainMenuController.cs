@@ -20,7 +20,6 @@ public class MainMenuController : MonoBehaviour
 
     private void OnPlayerCreated()
     {
-        Debug.Log("hola");
         _pressAnyButton.SetActive(false);
         _buttonContainer.SetActive(true);
     }
@@ -32,6 +31,7 @@ public class MainMenuController : MonoBehaviour
         //AudioManager.Instance.AudioSource.PlayOneShot(_newGameSound);
 
         // TODO: Fade screen to black while track is playing, and then load new level
+        PlayerManager.Instance.PlayerReferences.PlayerInputController.IsShowingMainMenu = false;
         SceneManager.LoadScene(Scenes.LOADING_SCREEN);
 
         Cursor.lockState = CursorLockMode.Locked;

@@ -55,6 +55,7 @@ public class PlayerManager : MonoBehaviour
         _playerInputManager.onPlayerJoined -= OnPlayerCreated;
 
         _playerReferences = playerInput.GetComponent<PlayerReferences>();
+        _playerReferences.PlayerInputController.IsShowingMainMenu = true;
         _playerReferences.MakePlayerKinematic();
         _playerReferences.DisableVisuals();
         _playerReferences.DisableCameras();

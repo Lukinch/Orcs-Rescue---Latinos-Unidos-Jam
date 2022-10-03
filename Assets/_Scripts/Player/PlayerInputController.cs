@@ -11,6 +11,7 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField] GameObject _deathMenu;
 
     public bool IsShowingDeathScreen { get; set; }
+    public bool IsShowingMainMenu { get; set; }
 
     public void OnDeath()
     {
@@ -28,6 +29,7 @@ public class PlayerInputController : MonoBehaviour
 
     public void OnPause()
     {
+        if (IsShowingMainMenu) return;
         if (IsShowingDeathScreen) return;
 
         Time.timeScale = 0;
@@ -41,6 +43,7 @@ public class PlayerInputController : MonoBehaviour
 
     public void OnPause(InputAction.CallbackContext context)
     {
+        if (IsShowingMainMenu) return;
         if (IsShowingDeathScreen) return;
 
         Time.timeScale = 0;
@@ -54,6 +57,7 @@ public class PlayerInputController : MonoBehaviour
 
     public void OnResume()
     {
+        if (IsShowingMainMenu) return;
         if (IsShowingDeathScreen) return;
 
         _pauseMenu.SetActive(false);
@@ -67,6 +71,7 @@ public class PlayerInputController : MonoBehaviour
 
     public void OnResume(InputAction.CallbackContext context)
     {
+        if (IsShowingMainMenu) return;
         if (IsShowingDeathScreen) return;
 
         _pauseMenu.SetActive(false);

@@ -74,6 +74,8 @@ public class LoadingScreenManager : MonoBehaviour
     void LoadMainMenu()
     {
         if (PlayerManager.Instance.PlayerReferences) PlayerManager.Instance.ClearPlayer();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(Scenes.MAIN_MENU);
     }
 
