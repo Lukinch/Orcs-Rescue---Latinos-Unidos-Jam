@@ -158,6 +158,7 @@ public class PlayerManager : MonoBehaviour
         }
         isPlayerDead = true;
         DisablePlayerInteraction();
+        PlayerReferences.PlayerInput.SwitchCurrentActionMap("UI");
         PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_RESPAWN_TRIGGERED);
         PlayerReferences.PlayerAnimator.SetTrigger(ANIM_DEAD_TRIGGERED);
 
@@ -172,6 +173,7 @@ public class PlayerManager : MonoBehaviour
         EnablePlayerInteraction();
         PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_DEAD_TRIGGERED);
         PlayerReferences.PlayerAnimator.SetTrigger(ANIM_RESPAWN_TRIGGERED);
+        PlayerReferences.PlayerInput.SwitchCurrentActionMap("Player");
 
         OnPlayerRespawned?.Invoke();
     }
