@@ -12,6 +12,7 @@ public class PlayerReferences : MonoBehaviour
     [SerializeField] PlayerController _playerController;
     [SerializeField] PlayerInputController _playerInputController;
     [SerializeField] Animator _playerAnimator;
+    [SerializeField] Cinemachine.CinemachineFreeLook _freeLookCam;
 
     public GameObject Visuals { get => _visuals; }
     public GameObject CamerasParent { get => _camerasParent; }
@@ -20,6 +21,7 @@ public class PlayerReferences : MonoBehaviour
     public PlayerController PlayerController { get => _playerController; }
     public PlayerInputController PlayerInputController { get => _playerInputController; }
     public Animator PlayerAnimator { get => _playerAnimator; }
+    public Cinemachine.CinemachineFreeLook FreeLookCam { get => _freeLookCam; }
 
     public bool AreVisualsVisible() => _visuals.activeInHierarchy;
     public void EnableVisuals() => _visuals.SetActive(true);

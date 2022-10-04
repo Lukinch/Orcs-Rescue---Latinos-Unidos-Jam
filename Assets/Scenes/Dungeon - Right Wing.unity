@@ -22380,7 +22380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runeType: 1
   direction: {x: 0, y: 1, z: 0}
-  distance: 5
+  distance: 3.2
   movingSpeed: 0
   audioSource: {fileID: 0}
   soundToPlay: {fileID: 0}
@@ -50394,6 +50394,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548318723484047002, guid: 8d27f8502d4a3554998c22da303266e4,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.442473
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548318723484047002, guid: 8d27f8502d4a3554998c22da303266e4,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 4.3610797
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548318723484047002, guid: 8d27f8502d4a3554998c22da303266e4,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -2.436367
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548318723484047002, guid: 8d27f8502d4a3554998c22da303266e4,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 2.4634879
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d27f8502d4a3554998c22da303266e4, type: 3}

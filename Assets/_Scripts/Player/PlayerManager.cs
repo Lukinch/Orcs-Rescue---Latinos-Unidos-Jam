@@ -17,8 +17,45 @@ public class PlayerManager : MonoBehaviour
     PlayerInput _playerInput;
     PlayerReferences _playerReferences;
 
+    float _horizontalSensitivity;
+    float _verticalSensitivity;
+
     public PlayerInput PlayerInput { get => _playerInput; }
     public PlayerReferences PlayerReferences { get => _playerReferences; }
+    public float HorizontalSensitivity
+    {
+        get { return _horizontalSensitivity; }
+        set
+        {
+            _horizontalSensitivity = value;
+            if (_playerReferences)
+            {
+                _playerReferences.FreeLookCam.m_XAxis.m_MaxSpeed = _horizontalSensitivity * MAX_HORIZONTAL_SENSITIVITY;
+                SaveHorizontalSensitivitySettings(value);
+            }
+        }
+    }
+    public float VerticalSensitivity
+    {
+        get { return _verticalSensitivity; }
+        set
+        {
+            _verticalSensitivity = value;
+            if (_playerReferences)
+            {
+                _playerReferences.FreeLookCam.m_YAxis.m_MaxSpeed = _verticalSensitivity * MAX_VERTICAL_SENSITIVITY;
+                SaveVerticalSensitivitySettings(value);
+            }
+        }
+    }
+
+    // Cinemachine specific values
+    public readonly float MAX_HORIZONTAL_SENSITIVITY = 250;
+    public readonly float MAX_VERTICAL_SENSITIVITY = 2;
+    readonly string SETTINGS_HORIZONTAL = "Horizontal_Sensitivity";
+    readonly string SETTINGS_VERTICAL = "Vertical_Sensitivity";
+    readonly float DEFAULT_HORIZONTAL_SLIDER_SENSITIVITY = 0.6f;
+    readonly float DEFAULT_VERTICAL_SLIDER_SENSITIVITY = 0.75f;
 
     public static PlayerManager Instance { get; private set; }
     public event Action OnNewPlayerJoined;
@@ -41,6 +78,7 @@ public class PlayerManager : MonoBehaviour
         DontDestroyOnLoad(this);
 
         _playerInputManager.onPlayerJoined += OnPlayerCreated;
+        LoadSensitivitySettings();
     }
 
     void OnDestroy() => _playerInputManager.onPlayerJoined -= OnPlayerCreated;
@@ -60,7 +98,32 @@ public class PlayerManager : MonoBehaviour
         _playerReferences.DisableVisuals();
         _playerReferences.DisableCameras();
         _playerReferences.DisableControllerScript();
+        _playerReferences.FreeLookCam.m_XAxis.m_MaxSpeed = HorizontalSensitivity * MAX_HORIZONTAL_SENSITIVITY;
+        _playerReferences.FreeLookCam.m_YAxis.m_MaxSpeed = VerticalSensitivity * MAX_VERTICAL_SENSITIVITY;
         playerInput.SwitchCurrentActionMap("UI");
+    }
+
+    void LoadSensitivitySettings()
+    {
+        if (PlayerPrefs.HasKey(SETTINGS_HORIZONTAL))
+        {
+            float horizontal = PlayerPrefs.GetFloat(SETTINGS_HORIZONTAL);
+            float vertical = PlayerPrefs.GetFloat(SETTINGS_VERTICAL);
+            HorizontalSensitivity = horizontal;
+            VerticalSensitivity = vertical;
+            return;
+        }
+
+        HorizontalSensitivity = DEFAULT_HORIZONTAL_SLIDER_SENSITIVITY;
+        VerticalSensitivity = DEFAULT_VERTICAL_SLIDER_SENSITIVITY;
+    }
+    private void SaveHorizontalSensitivitySettings(float sliderValue)
+    {
+        PlayerPrefs.SetFloat(SETTINGS_HORIZONTAL, sliderValue);
+    }
+    private void SaveVerticalSensitivitySettings(float sliderValue)
+    {
+        PlayerPrefs.SetFloat(SETTINGS_VERTICAL, sliderValue);
     }
 
     public void DisablePlayerInteraction()

@@ -19,6 +19,9 @@ public class NPCOrcController : RuneListener
 
     void OnOrcRescued()
     {
-        animator.SetInteger("Celebration", Random.Range(1, celebrationAnimations+1));
+        if (animator)
+        {
+            animator.SetInteger("Celebration", Random.Range(1, celebrationAnimations + 1));
+        }
     }
 }
