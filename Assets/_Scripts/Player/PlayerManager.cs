@@ -22,6 +22,8 @@ public class PlayerManager : MonoBehaviour
 
     public PlayerInput PlayerInput { get => _playerInput; }
     public PlayerReferences PlayerReferences { get => _playerReferences; }
+    public Transform RespawnPoint;
+
     public float HorizontalSensitivity
     {
         get { return _horizontalSensitivity; }
@@ -164,9 +166,8 @@ public class PlayerManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
-        Transform respawnPoint = GameObject.FindGameObjectWithTag(Tags.RESPAWN_POINT).transform;
         PlayerInput.gameObject.transform.SetPositionAndRotation(
-                    respawnPoint.position, respawnPoint.rotation);
+                    RespawnPoint.position, RespawnPoint.rotation);
         isPlayerDead = false;
         EnablePlayerInteraction();
         PlayerReferences.PlayerAnimator.ResetTrigger(ANIM_DEAD_TRIGGERED);
@@ -185,6 +186,7 @@ public class PlayerManager : MonoBehaviour
             _playerReferences = null;
         }
 
+        RespawnPoint = null;
         _playerInputManager.onPlayerJoined += OnPlayerCreated;
         _playerInputManager.EnableJoining();
     }

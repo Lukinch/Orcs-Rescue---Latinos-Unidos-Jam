@@ -2,21 +2,13 @@ using UnityEngine;
 
 public class RespawnPoint : MonoBehaviour
 {
-    [SerializeField] GameStateController.GameState activetedGameState;
+    [SerializeField] Transform _respawnPoint;
 
-    private void Awake()
+    void OnTriggerEnter(Collider other)
     {
-        GameStateController.OnGameStateChanged += OnGameStateChanged;
-        OnGameStateChanged(GameStateController.Instance.CurrentGameState);
-    }
-
-    void OnGameStateChanged(GameStateController.GameState gameState)
-    {
-            gameObject.SetActive(activetedGameState == gameState);
-    }
-
-    private void OnDestroy()
-    {
-        GameStateController.OnGameStateChanged -= OnGameStateChanged;
+        if (other.CompareTag(Tags.PLAYER))
+        {
+            PlayerManager.Instance.RespawnPoint = _respawnPoint;
+        }
     }
 }
